@@ -1,0 +1,7 @@
+#!/bin/sh
+#PBS -N helloTask
+#PBS -o helloTask.out
+#PBS -e helloTask.err
+#PBS -l nodes=4:ppn=4
+#PBS -l walltime=00:01:00
+mpiexec -np 16 ./helloCompiled.out

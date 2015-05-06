@@ -1,0 +1,7 @@
+#!/bin/sh
+#PBS -N commTask
+#PBS -o commTask.out
+#PBS -e commTask.err
+#PBS -l nodes=4:ppn=4
+#PBS -l walltime=00:01:00
+mpiexec -np 4 ./commCompiled.out
