@@ -1,0 +1,7 @@
+#!/bin/sh
+#PBS -N bcastJob
+#PBS -o bcastJob.out
+#PBS -e bcastJob.err
+#PBS -l nodes=4:ppn=8
+#PBS -l walltime=00:05:00
+mpiexec -np 32 ./compiledFile.out

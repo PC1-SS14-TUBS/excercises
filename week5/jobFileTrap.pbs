@@ -1,0 +1,7 @@
+#!/bin/sh
+#PBS -N trapJob
+#PBS -o trapJob.out
+#PBS -e trapJob.err
+#PBS -l nodes=2:ppn=5
+#PBS -l walltime=00:01:00
+mpiexec -np 10 ./compiledFile.out 0 2 10
