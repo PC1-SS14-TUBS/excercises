@@ -1,0 +1,7 @@
+#!/bin/sh
+#PBS -N checkerboard
+#PBS -o checkerboard.out
+#PBS -e checkerboard.err
+#PBS -l nodes=4:ppn=4
+#PBS -l walltime=00:01:00
+mpiexec -np 16 ./compiledFile.out
